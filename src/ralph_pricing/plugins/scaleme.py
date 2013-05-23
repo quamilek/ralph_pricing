@@ -65,7 +65,7 @@ def update_scaleme_usage(usage_types, date, url):
 
 @plugin.register(chain='pricing', requires=['ventures'])
 def scaleme(**kwargs):
-    """ Update Scaleme usage per Venture """
+    """Update Scaleme usage per Venture"""
     if not settings.SCALEME_API_URL:
         return False, "Not configured.", kwargs
     url = settings.SCALEME_API_URL
