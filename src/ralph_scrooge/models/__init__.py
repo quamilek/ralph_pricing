@@ -26,6 +26,7 @@ from ralph_scrooge.models.pricing_object import (
     DailyVIPInfo,
     DailyVirtualInfo,
     DatabaseInfo,
+    IPInfo,
     PricingObjectModel,
     PricingObjectType,
     PRICING_OBJECT_TYPES,
@@ -64,8 +65,9 @@ from ralph_scrooge.models.team import (
 
 from ralph_scrooge.models.usage import (
     DailyUsage,
-    UsageType,
     UsagePrice,
+    UsageType,
+    UsageTypeUploadFreq,
 )
 
 from ralph_scrooge.models.warehouse import (
@@ -93,6 +95,7 @@ __all__ = [
     'Environment',
     'ExtraCost',
     'ExtraCostType',
+    'IPInfo',
     'HistoricalService',  # dynamic model
     'OwnershipType',
     'ProfitCenter',
@@ -118,6 +121,7 @@ __all__ = [
     'TeamServiceEnvironmentPercent',
     'TenantInfo',
     'UsageType',
+    'UsageTypeUploadFreq',
     'UsagePrice',
     'VIPInfo',
     'VirtualInfo',
